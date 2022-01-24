@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - Assets/AdditionalPackages/Warped Caves/Artwork/Environment/tilesets.png.meta
+    - Assets/Animations/Crab.controller
+    - Assets/Animations/WalkCrab.controller
+    - Assets/Animations/WalkCrab.controller.meta
+    - Assets/PhisicsMaterials/TRENIE.physicsMaterial2D
+    - Assets/Props/500pxBar.png
+    - Assets/Props/500pxBar.png.meta
+    - Assets/Props/Crab.prefab
+    - Assets/Props/CutScene.prefab
+    - Assets/Props/CutScene.prefab.meta
+    - Assets/Props/DeathCanvas.prefab
+    - Assets/Props/DeathCanvas.prefab.meta
+    - Assets/Props/MovingCrab.prefab
+    - Assets/Props/MovingCrab.prefab.meta
+    - Assets/Props/Player.prefab
+    - Assets/Props/PlazmaBall_boss.prefab
+    - Assets/Props/PlazmaBall_boss.prefab.meta
+    - Assets/Props/WaterDamager.prefab
+    - Assets/Props/WaterDamager.prefab.meta
+    - Assets/Scenes/1Day.unity
+    - Assets/Scenes/2Day.unity
+    - Assets/Scenes/3Day.unity
+    - Assets/Scenes/4Day.unity
+    - Assets/Scenes/5Day.unity
+    - Assets/Scenes/MENU.unity
+    - Assets/Scenes/MENU.unity.meta
+    - Assets/Scripts/BattleScripts/ContinuesDamager.cs
+    - Assets/Scripts/BattleScripts/ContinuesDamager.cs.meta
+    - Assets/Scripts/BattleScripts/Damager.cs
+    - Assets/Scripts/BattleScripts/Death.cs
+    - Assets/Scripts/BattleScripts/Enemy.cs
+    - Assets/Scripts/BattleScripts/EnemyBossGun.cs
+    - Assets/Scripts/BattleScripts/EnemyBossGun.cs.meta
+    - Assets/Scripts/Cutscenes/CutscenesHub.cs
+    - Assets/Scripts/Cutscenes/CutscenesHub.cs.meta
+    - Assets/Scripts/Cutscenes/DialogPlayer.cs
+    - Assets/Scripts/Cutscenes/DialogPlayer.cs.meta
+    - Assets/Scripts/Cutscenes/StoryTrigger.cs
+    - Assets/Scripts/Cutscenes/StoryTrigger.cs.meta
+    - Assets/Scripts/Cutscenes/StoryTriggerEnd.cs
+    - Assets/Scripts/Cutscenes/StoryTriggerEnd.cs.meta
+    - Assets/Scripts/InterfaceScripts/EnemyHPCounter.cs
+    - Assets/Scripts/InterfaceScripts/EnemyHPCounter.cs.meta
+    - Assets/Scripts/InterfaceScripts/MenuLevelSwitch.cs
+    - Assets/Scripts/LevelScripts/CrabMovePoint.cs
+    - Assets/Scripts/LevelScripts/CrabMovePoint.cs.meta
+    - Assets/Scripts/LevelScripts/EndLevel.cs
+    - Assets/Scripts/LevelScripts/EndLevel.cs.meta
+    - Assets/Scripts/LevelScripts/MovingPlatfom.cs
+    - Assets/Scripts/LevelScripts/NPCMovementToPoint.cs
+    - Assets/Scripts/LevelScripts/NPCMovementToPoint.cs.meta
+    - Assets/Scripts/LevelScripts/PointsCount.cs
+    - Assets/Scripts/PlayerScripts/InputSystem.inputsettings.asset
+    - Assets/Scripts/PlayerScripts/InputSystem.inputsettings.asset.meta
+    - Assets/Scripts/PlayerScripts/PlayerInputWrapper.cs
+    - Assets/Scripts/PlayerScripts/PlayerMovement.cs
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - 
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

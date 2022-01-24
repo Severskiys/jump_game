@@ -71,4 +71,9 @@ public class PlayerInputWrapper : MonoBehaviour
     {
         IsNextMessegeSelected?.Invoke();
     }
+
+    public void DisableInput()
+    {
+        _playerInput.Player.Disable();
+    }
 }

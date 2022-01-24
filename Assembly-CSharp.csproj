@@ -57,10 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleScripts\IDamageble.cs" />
+    <Compile Include="Assets\Scripts\LevelScripts\CrabMovePoint.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\PauseResumeGame.cs" />
-    <Compile Include="Assets\Scripts\Cutscenes\CutscenesSwitch.cs" />
+    <Compile Include="Assets\Scripts\LevelScripts\PointsCount.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\DialogPlayer.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\ExitGame.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\ContinuesDamager.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\Character.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\PlayerCanvasCounters.cs" />
     <Compile Include="Assets\Scripts\BattleScripts\Enemy.cs" />
@@ -71,13 +74,18 @@
     <Compile Include="Assets\Scripts\BattleScripts\Death.cs" />
     <Compile Include="Assets\Scripts\BattleScripts\Gun.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\DialogueLine.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\CutscenesHub.cs" />
+    <Compile Include="Assets\Scripts\LevelScripts\StoryPoints.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInputWrapper.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\MenuLevelSwitch.cs" />
-    <Compile Include="Assets\Scripts\Cutscenes\StoryDialog.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\StoryTrigger.cs" />
+    <Compile Include="Assets\Scripts\LevelScripts\EndLevel.cs" />
+    <Compile Include="Assets\Scripts\LevelScripts\NPCMovementToPoint.cs" />
     <Compile Include="Assets\Scripts\BattleScripts\Damager.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerAnimator.cs" />
-    <Compile Include="Assets\Scripts\LevelScripts\PointsCount.cs" />
-    <Compile Include="Assets\Scripts\LevelScripts\StoryPoints.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\StoryTriggerEnd.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\EnemyBossGun.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\EnemyHPCounter.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

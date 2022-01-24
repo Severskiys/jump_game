@@ -9,14 +9,18 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Transform _groundColliderTransform;
     [SerializeField] private LayerMask _groundLayer;
+    [SerializeField] private Transform _wallColliderTransform;
 
     private float _inputDirection;
     private bool _isIntesectGround = false;
-    
+    private bool _isIntesectWall = false;
+
     private float _runSpeed = 2f;
+    private float _jumpShiftSpeedCurrent = 1.1f;
     private float _jumpShiftSpeed = 1.1f;
     private float _jumpForce = 3.3f;
-    private float _jumpOverlapRadius = 0.07f;
+    private float _jumpOverlapRadius = 0.09f;
+    private Vector2 _wallOverlapBoxSize = new Vector2(0.18f, 0.5f);
 
     private PlayerState _playerState = PlayerState.Idle;
 
@@ -41,24 +45,20 @@ public class PlayerMovement : MonoBehaviour
         _playerInputWrapper.IsMoved += OnInputMove;
     }
 
-    private void OnDisable()
+    private void OnDisable() 
     {
         _playerInputWrapper.IsJump -= OnInputJump;
         _playerInputWrapper.IsMoved -= OnInputMove;
     }
 
-    private void Update()
+    private void Update ()
     {
-         if (_isIntesectGround == false)
-         {
-            _isIntesectGround = Physics2D.OverlapCircle(_groundColliderTransform.position, _jumpOverlapRadius, _groundLayer);
-         } 
-    }
-    private void FixedUpdate ()
-    {   
+        _isIntesectGround = Physics2D.OverlapCircle(_groundColliderTransform.position, _jumpOverlapRadius, _groundLayer);
+        _isIntesectWall = Physics2D.OverlapBox(_wallColliderTransform.position, _wallOverlapBoxSize, 360f, _groundLayer);
+
         if (_playerState == PlayerState.Jump)
         {
-            Move(_inputDirection * _jumpShiftSpeed);
+            Move(_inputDirection * _jumpShiftSpeedCurrent);
             if (_isIntesectGround)
                 Idle();
         }
@@ -74,6 +74,14 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerState = PlayerState.Run;
             StartRun?.Invoke();
+        }
+        else if (_isIntesectWall == true && _isIntesectGround == false)
+        {
+            _jumpShiftSpeedCurrent = 0f;
+        }
+        else
+        {
+            _jumpShiftSpeedCurrent = _jumpShiftSpeed;
         }
     }
 

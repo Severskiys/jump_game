@@ -55,4 +55,10 @@ public class PointsCount : MonoBehaviour
         _overallGameScore += _killEnemyPonts;
         PointsAmountChanged?.Invoke(_overallGameScore);
     }
+
+    public int GetPointsAmount()
+    {
+        return _overallGameScore;
+    }
 }
+

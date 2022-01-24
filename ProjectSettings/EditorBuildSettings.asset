@@ -8,5 +8,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1Day.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/2Day.unity
+    guid: 8f5529d957731924ba961596c5c7f47d
+  - enabled: 1
+    path: Assets/Scenes/3Day.unity
+    guid: 58c873fd1ecb2aa49b9d243796819b24
+  - enabled: 1
+    path: Assets/Scenes/4Day.unity
+    guid: 3d278d2a70a3bbb419d5a1363a8fe664
+  - enabled: 1
+    path: Assets/Scenes/5Day.unity
+    guid: c631b1cae5468124b97b8f861bb68f16
+  - enabled: 1
+    path: Assets/Scenes/MENU.unity
+    guid: 6653437077754c14890f84678626d8e7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: d53d4cc35e7529348b1af12fa87a109c, type: 2}

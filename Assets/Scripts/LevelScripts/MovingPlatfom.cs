@@ -9,7 +9,9 @@ public class MovingPlatfom : MonoBehaviour
     private void Start()
     {
         _slider = GetComponent<SliderJoint2D>();
+        _slider.useMotor = true;
         _motor = _slider.motor;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,9 +26,11 @@ public class MovingPlatfom : MonoBehaviour
 
     private IEnumerator ActivateMotorAfterTime()
     {
+        _slider.useMotor = false;
         yield return new WaitForSeconds(1.0f);
         _motor.motorSpeed *= -1;
         _slider.motor = _motor;
+        _slider.useMotor = true;
     }
 
 }

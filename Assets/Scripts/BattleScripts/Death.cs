@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Death : MonoBehaviour
 {
-    [SerializeField] private Text _deathMessage;
+    [SerializeField] private GameObject _deathPanel;
 
     private IDamageble _unitWhoWillDie;
 
@@ -26,9 +26,8 @@ public class Death : MonoBehaviour
     {
         if (gameObject.TryGetComponent<Player>(out Player player))
         {
-            _deathMessage.gameObject.SetActive(true);
-            _deathMessage.text = "YOU DIED";
+            _deathPanel.SetActive(true);
         }
-        gameObject.SetActive(false);
+        gameObject.SetActive(false);//убираем из кадра персонажа
     }
 }
